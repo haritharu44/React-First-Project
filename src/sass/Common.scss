@@ -1,0 +1,29 @@
+.container{
+    .row{
+        .container{
+            img{
+                margin: auto;
+                animation: top-to-bottom 2s ease-in-out infinite alternate-reverse;
+
+                @keyframes top-to-bottom {
+                    0%{
+                        transform: translateY(10px);
+                    }
+                    100%{
+                        transform: translateY(-10px);
+                    }
+                }
+            }
+            .btn{
+                width: 130px;
+                height: 40px;
+                border-radius: 30px;
+                font-weight: 500;
+                &:hover{
+                    background-color: #0dcaf0;
+                    color: white;
+                }
+            }
+        }
+    }
+}
